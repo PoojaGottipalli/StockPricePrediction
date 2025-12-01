@@ -2,7 +2,8 @@
 
 from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
-from utils import fetch_stock_data, create_sequences
+from backend.utils import fetch_stock_data, create_sequences
+
 from lstm_model import load_trained_model, load_scaler, predict_future_price
 import pandas as pd
 import numpy as np
