@@ -10,7 +10,11 @@ import pandas as pd
 import numpy as np
 import os
 
-app = Flask(__name__, template_folder='../frontend/templates', static_folder='../frontend/static')
+app = Flask(
+    __name__,
+    template_folder=os.path.join(os.path.dirname(__file__), "templates"),
+    static_folder=os.path.join(os.path.dirname(__file__), "static")
+)
 CORS(app)
 
 # Load model and scaler once at startup
