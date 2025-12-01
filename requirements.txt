@@ -1,9 +1,11 @@
 Flask
 gunicorn
-tensorflow-cpu==2.10.0
+
 yfinance
 scikit-learn
-numpy==1.23.5
+
 pandas
 joblib
 flask-cors
+tensorflow-cpu==2.16.1
+numpy==1.26.4
