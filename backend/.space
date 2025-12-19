@@ -1,0 +1,8 @@
+{
+  "name": "stock-price-predictor",
+  "public": true,
+  "engines": {
+    "python": "3.9"
+  },
+  "run": "python app.py"
+}
